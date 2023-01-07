@@ -1,0 +1,242 @@
+ul.tabs li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.7s;
+    font-size: 15px;
+    text-align: center;
+    border-top-left-radius: 2rem; 
+}
+ul.tabs li:nth-child(2) {
+  border-radius: 0;
+
+}
+ul.tabs li:nth-child(3) {
+  border-radius: 0;
+  border-top-right-radius: 2rem; 
+}
+ul.tabs li:hover {
+  background: rgba(80, 120, 240, 0.15);
+}
+ul.tabs li.active {
+  background: #02314c;
+}
+
+
+
+/*----------  comment  ----------*/
+.contact-div_parent {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 70px;
+}
+.contact-div_child_contact {
+	width: 60%;
+}
+.contact img {
+	width: 90%;
+}
+.contact form input,
+.contact form textarea {
+	width: 90%;
+	background: #02314c;
+	border: 1px solid rgba(234, 234, 234, 0.9);
+	border-radius: 20px;
+	color: #fff;
+	margin: 0 0 8px 0;
+	padding: 18px 26px;
+	font-weight: 500;
+	font-size: 18px;
+	letter-spacing: 0.8px;
+	transition: 0.3s ease-in-out;
+}
+.contact form textarea {
+	min-height: 140px;
+}
+.contact form input:focus,
+.contact form textarea:focus {
+	background: rgb(52, 50, 50);
+	color: #fff;
+}
+.contact form input::placeholder,
+.contact form textarea::placeholder {
+	font-size: 16px;
+	font-weight: 400;
+
+}
+.contact form input::after,
+.contact form textarea::after {
+	font-size: 16px;
+	font-weight: 400;
+  background-color: #02314c;
+
+}
+.contact form input:focus::placeholder,
+.contact form textarea:focus::placeholder {
+	opacity: 0.8;
+}
+.contact-btn__container {
+	margin-top: 0.5rem;
+	display: flex;
+	justify-content: center;
+}
+.contact form button {
+	height: 50px;
+	width: 180px;
+	color: #fff;
+	font-size: 15px;
+	font-weight: 1000;
+	letter-spacing: 2px;
+	background-color: #02314c;
+	border: none;
+	transition: all 0.5s;
+	border-radius: 8px;
+	padding: 5px 20px;
+}
+.contact form button:hover {
+	background-color: rgb(52, 50, 50);
+}
+@media (max-width: 1200px) {
+	.contact form input,
+	.contact form textarea {
+		width: 90%;
+	}
+	.contact img {
+		width: 90%;
+	}
+	.contact-div_parent {
+		gap: 30px;
+	}
+	.contact-div_child_contact {
+		width: 70%;
+	}
+	.contact form textarea {
+		min-height: 110px;
+	}
+}
+@media (max-width: 992px) {
+	.contact form input,
+	.contact form textarea {
+		width: 100%;
+	}
+
+	.contact img {
+		width: 100%;
+	}
+	.contact-div_parent {
+		gap: 40px;
+	}
+	.contact-div_child_contact {
+		width: 80%;
+	}
+	.contact form textarea {
+		min-height: 110px;
+	}
+}
+@media (max-width: 768px) {
+	.contact img {
+		width: 100%;
+	}
+	.contact-div_parent {
+		gap: 30px;
+	}
+	.contact-div_child_contact {
+		width: 90%;
+	}
+	.contact form textarea {
+		min-height: 110px;
+	}
+}
+@media (max-width: 589px) {
+	.contact-div_child_img {
+		display: none;
+	}
+	.contact-div_parent {
+		gap: 30px;
+	}
+	.contact-div_child_contact {
+		width: 100%;
+	}
+	.contact form textarea {
+		min-height: 110px;
+	}
+}
+/************ Footer Css ************/
+.footer {
+	padding: 10px 0 20px 0;
+	background-color: #02314c;
+}
+.footer-container {
+	margin: 0rem 4rem 0rem 4rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.footer img {
+	width: 40px;
+}
+.footer p {
+	text-align: center;
+	font-weight: 400;
+	font-size: 15px;
+	color: #b8b8b8;
+	letter-spacing: 0.5px;
+	margin-top: 0px;
+}
+.footer-logo {
+	margin-top: 0.5rem;
+}
+@media (max-width: 684px) {
+	.social-icon_foter {
+		display: flex;
+		margin-top: 0.5rem;
+		margin-bottom: 0.5rem;
+	}
+}
+@media (max-width: 612px) {
+	.logo-container-foter {
+		display: none;
+	}
+	.footer-container {
+		padding-top: 1rem;
+		justify-content: center;
+		margin-bottom: 0.5rem;
+	}
+}
+
+.btn-div button {
+	margin-top: 1rem;
+	position: relative;
+	height: 45px;
+	width: 150px;
+	color: #fff;
+	font-size: 13px;
+	font-weight: 1000;
+	letter-spacing: 2px;
+	background-color: transparent;
+	border: 1px solid white;
+	transition: all 0.5s;
+	border-radius: 8px;
+}
+.btn-div button::before {
+	position: absolute;
+	content: "";
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: transparent;
+	border-radius: 5px;
+	transition: all 0.3s;
+	z-index: 1;
+}
+.btn-div button:hover {
+	background-color: rgba(240, 234, 240, 0.5);
+}
