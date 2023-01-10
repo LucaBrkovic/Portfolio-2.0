@@ -10,7 +10,7 @@ const Home = () => {
   const [isDeleting, setIsDeleting] = useState(false)
   const toRotate = ["Web Developer", "Web Designer", "Programmer"]
   const [text, setText] = useState("")
-  const [delta, setDelta] = useState(300- Math.random() * 80)
+  const [delta, setDelta] = useState(300)
   const control = useAnimation()
   const [ref,inView] = useInView()
 
@@ -66,7 +66,7 @@ const Home = () => {
 		<div className="mb-1 mt-1 h-[180px] px-4 ssmm:px-6 mmss:h-[130px] xxs:h-[105px] lg:h-[135px] xl:h-[90px] xl:mt-10">
 			
       <h1 className="text-[46px] lg:text-[50px] xl:text-[55px] font-bold py-1 xl:hidden text-white  ">{`Hi my name is Luka `}<br/> <span className="wrap-color">  {text}</span></h1>
-      <h1 className="text-[46px] lg:text-[50px] xl:text-[55px] font-bold py-1 xl:block hidden text-white  ">{`Hi my name is Luka `} <span className="wrap-color">  {text}</span></h1>
+      <h1 className="text-[46px] lg:text-[50px] xl:text-[55px] font-bold py-1 xl:block hidden text-white  ">{`Hi my name is Luka, `} <span className="wrap-color">  {text}</span></h1>
 			
 		</div>
 		<p className="text-[#b8b8b8] text-center text-[18px] lg:text-[20px] xl:text-[24px] xl:hidden tracking-wider w-[100%]">Fullstack Developer in progress, <br/>based in Germany, code addicted...</p>

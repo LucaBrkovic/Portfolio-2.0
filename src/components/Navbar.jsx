@@ -90,7 +90,7 @@ const Navbar = () => {
 						</div>
 
 						<div>
-							<button className="btn">Contat me</button>
+							<a href="#contact"><button  className="btn">Contat me</button></a>
 						</div>
 					</div>
 				</div>

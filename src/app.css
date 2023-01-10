@@ -45,7 +45,7 @@
 /** 2nd wave **/
 .custom-shape-divider-top-1673041248 {
     position: absolute;
-    top: 0;
+    top: -3px;
     left: 0;
     width: 100%;
     overflow: hidden;
@@ -55,8 +55,8 @@
 .custom-shape-divider-top-1673041248 svg {
     position: relative;
     display: block;
-    width: calc(299% + 1.3px);
-    height: 173px;
+    width: calc(299% + 1.5px);
+    height: 175px;
 }
 
 .custom-shape-divider-top-1673041248 .shape-fill {
@@ -68,7 +68,7 @@
 @media (min-width: 768px) and (max-width: 1023px) {
     .custom-shape-divider-top-1673041248 svg {
         width: calc(299% + 1.3px);
-        height: 198px;
+        height: 200px;
     }
 }
 
